@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   firebase: {
-    apiKey: "AIzaSyBOyCM9kSlXJ__ALP633QS6dz-BwTyKFTY",
+    apiKey: process.env['FIREBASE_API_KEY'] || '',
     authDomain: "harrisees.firebaseapp.com",
     projectId: "harrisees",
     storageBucket: "harrisees.appspot.com",
